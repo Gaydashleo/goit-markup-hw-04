@@ -138,10 +138,16 @@ p {
 
 /*======= HERO START =======*/
 .hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/image-hero/Hero-bg-Img.jpg);
+  background-size: cover;
+  background-color: var(--section-bg-dark);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--section-bg-dark);
 }
 .hero-title {
   text-align: center;
@@ -184,7 +190,7 @@ p {
 .section {
   padding-top: 94px;
 }
-.feature {
+.feature-list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
@@ -212,6 +218,9 @@ p {
 }
 .description:not(:last-child) {
   margin-right: 30px;
+}
+.feature-icon {
+  margin-bottom: 30px;
 }
 
 /*======= OUR FEATURE END=======*/
@@ -287,10 +296,65 @@ p {
   color: var(--primary-text-color);
 }
 .card-team {
+  padding-left: 32px;
+  padding-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.social-list-icon {
+  fill: #afb1b8;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  /* background-color: #ffffff; */
+  border-radius: 50%;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--button-text-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
 /*======= OUR TEAM END======= */
+/*======= OUR CUSTOMERS START =======*/
+
+.customers {
+  padding-bottom: 94px;
+}
+.customers-img {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.customers-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.customers-title {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+/*======= OUR CUSTOMERS END =======*/
 
 /*======= FOOTER START======= */
 .basement {
