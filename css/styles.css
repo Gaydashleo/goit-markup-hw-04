@@ -390,18 +390,13 @@ p {
 
 /*======= FOOTER START======= */
 .basement {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--section-bg-dark);
 }
-/* .footer-container {
-  display: flex;
-  height: 252px;
-  align-items: baseline;
-  margin-left: auto;
-  margin-right: auto;
-} */
 .basement-logo {
+  min-width: 145px;
   font-family: Raleway;
   font-weight: b700;
   font-size: 26px;
@@ -411,9 +406,6 @@ p {
   color: var(--footer-logo-color);
 }
 .basement-address {
-  display: flex;
-  /* width: 145px;
-  height: 31px; */
   margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -423,7 +415,6 @@ p {
 
   color: var(--footer-address-color);
 }
-
 .mail-basement {
   display: block;
   margin-top: 9px;
@@ -437,8 +428,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
 }
-.mail-footer:hover,
-.mail-footer:focus {
+.mail-basement:hover,
+.mail-basement:focus {
   color: var(--accent-color);
 }
 .tel-basement {
@@ -459,11 +450,7 @@ p {
 .tel-basement:focus {
   color: var(--accent-color);
 }
-
-.footer-social-list {
-}
 /*======= FOOTER END ======= */
-
 /*======= PORTFOLIO =======  */
 .top-line {
   border-bottom: 1px solid var(--portfolio-topline-border-color);
