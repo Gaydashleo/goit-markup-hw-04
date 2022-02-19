@@ -110,9 +110,23 @@ p {
 
   color: var(--title-text-color);
 }
-
-.mail-top {
+.mail-top-line {
+  display: flex;
   margin-left: auto;
+  align-content: center;
+}
+.mail-icon {
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.mail-icon:hover,
+.mail-top:focus {
+  fill: var(--button-hover-color);
+}
+.mail-top {
+  margin-left: 10px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -201,6 +215,7 @@ p {
   margin-left: 30px;
 }
 .feature-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   width: 270px;
   font-style: normal;
@@ -219,8 +234,12 @@ p {
 .description:not(:last-child) {
   margin-right: 30px;
 }
-.feature-icon {
-  margin-bottom: 30px;
+.above-feature-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
 }
 
 /*======= OUR FEATURE END=======*/
@@ -289,6 +308,7 @@ p {
 }
 
 .under-card-team-title {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -306,7 +326,6 @@ p {
 }
 .social-list {
   display: flex;
-  justify-content: space-between;
 }
 .social-list-link {
   display: flex;
@@ -337,15 +356,16 @@ p {
   margin-left: -30px;
   margin-top: -30px;
 }
-/* .customers-item { */
+.customers-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .social-list-icon {
-  align-content: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 180px) / 6);
+
+  flex-basis: calc((100%-180px) / 6);
 }
 
 .customers-title {
