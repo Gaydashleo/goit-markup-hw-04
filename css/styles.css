@@ -337,10 +337,15 @@ p {
   margin-left: -30px;
   margin-top: -30px;
 }
-.customers-item {
+/* .customers-item { */
+.social-list-icon {
+  align-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 180px) / 6);
 }
 
 .customers-title {
