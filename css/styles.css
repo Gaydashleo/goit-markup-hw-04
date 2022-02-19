@@ -405,7 +405,12 @@ p {
 
   color: var(--footer-logo-color);
 }
+.footer-address {
+  display: flex;
+}
 .basement-address {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -450,6 +455,11 @@ p {
 .tel-basement:focus {
   color: var(--accent-color);
 }
+.footer-social-list {
+  display: flex;
+  flex-direction: column;
+}
+
 /*======= FOOTER END ======= */
 /*======= PORTFOLIO =======  */
 .top-line {
