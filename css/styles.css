@@ -14,6 +14,7 @@
   --portfolio-button-bg-color: #f5f4fa;
   --portfolio-project-border-color: #eeeeee;
   --portfolio-topline-border-color: #ececec;
+  --footer-icon-bg: #ffffff10;
 }
 body {
   background-color: var(#ffffff);
@@ -455,9 +456,30 @@ p {
 .tel-basement:focus {
   color: var(--accent-color);
 }
+.footer-social-title {
+  padding-bottom: 20px;
+}
 .footer-social-list {
   display: flex;
   flex-direction: column;
+  padding-left: 70px;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--footer-icon-bg);
+  border-radius: 50%;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--button-text-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
 }
 
 /*======= FOOTER END ======= */
