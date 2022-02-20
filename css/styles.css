@@ -15,6 +15,7 @@
   --portfolio-project-border-color: #eeeeee;
   --portfolio-topline-border-color: #ececec;
   --footer-icon-bg: #ffffff10;
+  --shadow-team: #00000025;
 }
 body {
   background-color: var(#ffffff);
@@ -292,8 +293,8 @@ p {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
   color: var(--title-text-color);
+  text-shadow: 0px 4px 4px var(--shadow-team);
 }
 .team {
   display: flex;
@@ -328,6 +329,7 @@ p {
   padding-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 4px 4px var(--shadow-team);
 }
 .social-list-icon {
   fill: #afb1b8;
@@ -365,15 +367,21 @@ p {
   margin-top: -30px;
 }
 .customers-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
   margin-left: 30px;
   margin-top: 30px;
-}
-.social-list-icon {
+  flex-basis: calc((100%-180px) / 6);
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-
-  flex-basis: calc((100%-180px) / 6);
+  cursor: pointer;
+}
+.customers-icon {
+  fill: #afb1b8;
 }
 
 .customers-title {
@@ -385,6 +393,11 @@ p {
   text-align: center;
 
   color: var(--title-text-color);
+}
+
+.customers-item:hover .customers-icon,
+.customers-item:focus .customers-icon {
+  fill: var(--accent-color);
 }
 
 /*======= OUR CUSTOMERS END =======*/
@@ -517,6 +530,10 @@ button {
   color: var(--title-text-color);
   border-radius: 4px;
 }
+.btn-list:hover,
+.btn-list:focus {
+  box-shadow: 0px 4px 4px var(--shadow-team);
+}
 
 /*======= FILTERS END ======= */
 /*======= PROJECT ======= */
@@ -537,6 +554,11 @@ button {
   border-bottom: 1px solid var(--portfolio-project-border-color);
   border-left: 1px solid var(--portfolio-project-border-color);
   border-right: 1px solid var(--portfolio-project-border-color);
+  cursor: pointer;
+}
+.card-img-project:hover,
+.card-img-project:focus {
+  box-shadow: 0px 4px 4px 0 var(--shadow-team);
 }
 .card-project-title {
   margin-bottom: 4px;
