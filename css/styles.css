@@ -114,8 +114,10 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: var(--title-text-color);
 }
+
 .nav-text:active {
   color: var(--accent-color);
 }
@@ -123,48 +125,42 @@ p {
 .nav-text:focus {
   color: var(--accent-color);
 }
-.mail-icon {
-  display: flex;
-}
-.mail-top {
-  display: flex;
-  margin-left: 10px;
-  color: var(--primary-text-color);
-
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
 .mail-top-line {
   display: flex;
   margin-left: auto;
   align-items: center;
   cursor: pointer;
 }
-
+.mail-top {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.mail-icon {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
 .mail-top:hover,
 .mail-top:focus {
   color: var(--accent-color);
 }
-
 .tel-top {
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
   color: var(--primary-text-color);
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.tel-top-line {
-  align-items: center;
-  display: flex;
-  margin-left: 50px;
-  cursor: pointer;
 }
 .tel-top:hover,
 .tel-top:focus {
   color: var(--accent-color);
 }
-
 /*======= TOP LINE END=======*/
 
 /*======= HERO START =======*/
