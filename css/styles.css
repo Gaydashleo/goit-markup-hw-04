@@ -409,18 +409,16 @@ p {
 .customers-icon {
   fill: currentColor;
 }
-/* .customers-item:hover,
-.customers-item:focus {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-} */
-
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
-  color: var(--accent-color);
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
+
+/* .customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  color: var(--accent-color);
+} */
 
 /*======= OUR CUSTOMERS END =======*/
 
