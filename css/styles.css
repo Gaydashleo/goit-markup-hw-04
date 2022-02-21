@@ -446,6 +446,7 @@ p {
 .basement-logo {
   width: 145px;
   height: 31px;
+
   font-family: Raleway;
   font-weight: b700;
   font-size: 26px;
@@ -455,6 +456,7 @@ p {
   color: var(--footer-logo-color);
 }
 .basement-address {
+  margin-top: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -502,9 +504,10 @@ p {
   padding-bottom: 20px;
 }
 .footer-social-list {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding-left: 70px;
+  padding-top: 12px;
 }
 .social-list-link {
   display: flex;
