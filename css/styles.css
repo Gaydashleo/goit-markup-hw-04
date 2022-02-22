@@ -17,6 +17,7 @@
   --footer-icon-bg: #ffffff10;
   --shadow-team: #00000025;
   --card-team-bg: #ffffff;
+  --customers-color-icon: #afb1b8;
 }
 body {
   background-color: var(#ffffff);
@@ -406,7 +407,8 @@ p {
   flex-basis: calc((100%-180px) / 6);
   align-items: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  color: var(--customers-color-icon);
+  border: 1px solid var(--customers-color-icon);
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
